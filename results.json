@@ -4,11 +4,11 @@
   "invalid": [],
   "passed": [
     {
-      "describe": "build/4",
-      "file": "/home/eric/ignite/elixir/elixir-flight-reservations/test/bookings/booking_test.exs",
-      "line": 7,
-      "module": "Elixir.Flightex.Bookings.BookingTest",
-      "test": "test build/4 when all params are valid, returns a booking"
+      "describe": "call/1",
+      "file": "/home/eric/ignite/elixir/elixir-flight-reservations/test/bookings/create_or_update_test.exs",
+      "line": 13,
+      "module": "Elixir.Flightex.Bookings.CreateOrUpdateTest",
+      "test": "test call/1 when all params are valid, returns a valid tuple"
     }
   ],
   "skiped": []
