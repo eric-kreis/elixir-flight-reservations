@@ -6,10 +6,9 @@ defmodule Flightex.Users.Agent do
   def start_link(%{}), do: Agent.start_link(fn -> %{} end, name: __MODULE__)
 
   def save(%User{} = user) do
-    uuid = UUID.uuid4()
-    Agent.update(__MODULE__, &update_state(&1, uuid, user))
+    Agent.update(__MODULE__, &update_state(&1, user.cpf, user))
 
-    {:ok, uuid}
+    {:ok, user.cpf}
   end
 
   def get(cpf), do: Agent.get(__MODULE__, &get_user(&1, cpf))
@@ -21,5 +20,5 @@ defmodule Flightex.Users.Agent do
     end
   end
 
-  defp update_state(state, uuid, %User{} = user), do: Map.put(state, uuid, user)
+  defp update_state(state, cpf, %User{} = user), do: Map.put(state, cpf, user)
 end
