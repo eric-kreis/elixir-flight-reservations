@@ -4,11 +4,32 @@
   "invalid": [],
   "passed": [
     {
-      "describe": "generate/1",
-      "file": "/home/eric/ignite/elixir/elixir-flight-reservations/test/bookings/report_test.exs",
-      "line": 13,
-      "module": "Elixir.Flightex.Bookings.ReportTest",
-      "test": "test generate/1 when called, return the content"
+      "describe": "get/1",
+      "file": "/home/eric/ignite/elixir/elixir-flight-reservations/test/bookings/booking_agent_test.exs",
+      "line": 53,
+      "module": "Elixir.Flightex.Bookings.AgentTest",
+      "test": "test get/1 when the booking wasn't found, returns an error"
+    },
+    {
+      "describe": "save/1",
+      "file": "/home/eric/ignite/elixir/elixir-flight-reservations/test/bookings/booking_agent_test.exs",
+      "line": 15,
+      "module": "Elixir.Flightex.Bookings.AgentTest",
+      "test": "test save/1 when the param are valid, return a booking uuid"
+    },
+    {
+      "describe": "get/1",
+      "file": "/home/eric/ignite/elixir/elixir-flight-reservations/test/bookings/booking_agent_test.exs",
+      "line": 34,
+      "module": "Elixir.Flightex.Bookings.AgentTest",
+      "test": "test get/1 when the booking is found, return a booking"
+    },
+    {
+      "describe": "get_all/0",
+      "file": "/home/eric/ignite/elixir/elixir-flight-reservations/test/bookings/booking_agent_test.exs",
+      "line": 79,
+      "module": "Elixir.Flightex.Bookings.AgentTest",
+      "test": "test get_all/0 when there is some booking, return bookings"
     }
   ],
   "skiped": []
